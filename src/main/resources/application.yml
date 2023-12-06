@@ -1,0 +1,8 @@
+jwt:
+  signingKey: "1wSDkMcpg50+sjjLC1zhKglngluOh9MpSbS+kbE3239Kasje"
+  issuer: "ecommerce"
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
