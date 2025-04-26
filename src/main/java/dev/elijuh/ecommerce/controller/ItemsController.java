@@ -49,8 +49,8 @@ public class ItemsController {
         return ResponseEntity.created(uri).body(item);
     }
 
-    @DeleteMapping("/delete")
-    public Item deleteItem(@RequestParam Long id) {
+    @DeleteMapping("/{id}")
+    public Item deleteItem(@PathVariable Long id) {
         return itemService.deleteItem(id);
     }
 }
